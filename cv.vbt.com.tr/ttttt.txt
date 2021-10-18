@@ -1,0 +1,165 @@
+body .overflow-auto {
+  overflow-y: scroll;
+  position: absolute;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  width: 342px;
+  height: 317px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+
+body .overflow-auto .TagsForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6d6d6d;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  width: 50%;
+  text-align: left;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+body .overflow-auto .TagsForm .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer input:checked ~ .checkmark {
+  background: #6b5acc;
+}
+
+body .overflow-auto .TagsForm .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+body .overflow-auto .TagsForm .CheckboxContainer .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 3px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+body .overflow-auto .TextArea2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+  color: #8b8b8b;
+  margin-bottom: 10px;
+}
+
+body .CheckBoxArea {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6d6d6d;
+}
+
+
+
+<form class="TagsForm">
+          <label class="CheckboxContainer"
+            >C#
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="CheckboxContainer"
+            >JAVA
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="CheckboxContainer"
+            >PYTHON
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="CheckboxContainer"
+            >HTML
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="CheckboxContainer"
+            >CSS
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="CheckboxContainer"
+            >ANGULAR
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="CheckboxContainer"
+            >REACT
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="CheckboxContainer"
+            >SQL
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </form>
